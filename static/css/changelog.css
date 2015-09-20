@@ -1,0 +1,113 @@
+.strong {
+  font-weight: bold;
+}
+
+.round-border {
+	margin-right: 0;
+	margin-left: 0;
+	background-color: #fff;
+	border-color: #ddd;
+	border-width: 1px;
+	border-radius: 4px 4px 0 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	position: relative;
+	padding: 45px 15px 15px;
+	margin: 0 -15px 15px;
+	border-color: #e5e5e5 #eee #eee;
+	border-style: solid;
+}
+
+.col-md-4-no-pad {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  width: 33.33333333333333%;
+}
+.col-md-5-no-pad {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  width: 41.66666666666667%%;
+}
+.col-md-7-no-pad {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  width: 58.333333333333336%;
+}
+
+.col-md-5-sm-margin {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  width: 39%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.col-md-7-sm-margin {
+  position: relative;
+  min-height: 1px;
+  float: left;
+  width: 58%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+.dropup-menu {
+    bottom: 100%;
+    top: auto !important;
+}
+
+.btn-group.btn-block > .btn {
+    display: table-cell;
+}
+
+.dropdown-menu {
+	min-width: 250px;
+}
+
+.navbar-form input, .form-inline input {
+	width:auto;
+}
+
+.navbar-btn {
+	margin: 8px;
+}
+
+.search_bar {
+	width:260px;
+	padding:10px;
+}
+
+input[readonly].default-cursor {
+    cursor: pointer;
+}
+
+.calendar_key {
+	table-layout: fixed; 
+	width:100%;
+	text-align:center;
+}
+
+.view-change-panel-body{
+padding: 15px;
+overflow-y: scroll;
+max-height: 240px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    right: auto;
+    left: 50%;
+    /*width: 600px; Removed to fix Modal Width*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .view-change-modal-content {
+    max-height: 500px;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}

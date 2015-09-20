@@ -1,0 +1,99 @@
+<div class="modal" id="add_change" tabindex="1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+            <h4 class="modal-title lead" id="Modal_Title">Add A Change</h4>
+            </div>
+      <div class="modal-body">
+        <div class="row-fluid">
+          <div class="panel panel-default col-md-5-sm-margin">
+            <div class="panel-heading panel-title text-center">Change Details</div>
+              <table class="table col-md-6 table-striped table-bordered">
+                <tbody>
+                  <tr>
+                    <td><strong>Start Time: </strong></td>
+                    <td>
+                      <div class="form-group span12">
+                          <input class="form-control default-cursor" size="18" type="text" value="Click Me" id="start_value" readonly="readonly">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Duration: </strong></td>
+                    <td>
+                      <div class="dropdown span12">
+                        <button class="btn dropdown-toggle col-sm-12 duration_value" type="button" data-toggle="dropdown">Select Duration <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown_environment" id="add_duration">
+                          <!--Populated with JS -->
+                        </ul>
+                        <div class="col-md-4">
+                          <input type="text" class="form-control col-md-2" style="display: none;" placeholder="User">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Summary: </strong></td>
+                    <td>
+                      <input type="text" class="form-control col-sm-12 summary_value" placeholder="Enter Summary of Change Here">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Owner: </strong></td>
+                    <td>
+                      <div class="dropdown span12">
+                          <button class="btn dropdown-toggle col-sm-12 owner_value" type="button" data-toggle="dropdown">Select Owner <span class="caret"></span></button>
+                          <ul class='dropdown-menu' id="add_owner" role='menu' aria-labelledby='dropdown_owner'>
+                          <!--Populated with JS -->
+                          <div class="col-md-4">
+                            <input type="text" class="form-control col-md-2" style="display: none;" placeholder="User">
+                          </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Environment: </strong></td>
+                    <td>
+                      <div class="dropdown span12">
+                        <button class="btn dropdown-toggle col-sm-12 environment_value" type="button" data-toggle="dropdown">Select Environment <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropup-menu" id="add_environment" role="menu" aria-labelledby="dropdown_environment">
+                          <!--Populated with JS -->
+                        </ul>
+                        <div class="col-md-4">
+                          <input type="text" class="form-control col-md-2" style="display: none;" placeholder="User">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>System: </strong></td>
+                    <td>
+                      <div class="dropdown span12">
+                        <button class="btn dropdown-toggle col-sm-12 system_value" type="button" data-toggle="dropdown">Select System <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropup-menu" id="add_system" role="menu" aria-labelledby="dropdown_system">
+                          <!--Populated with JS -->
+                        </ul>
+                        <div class="col-md-4">
+                          <input type="text" class="form-control col-md-2" style="display: none;" placeholder="User">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+          <div class="panel panel-default col-md-7-sm-margin">
+            <div class="panel-heading panel-title text-center">Change</div>
+              <div id="summernote">Add Change Here!</div>
+          </div> 
+        </div>
+      </div>
+      <div class="modal-footer">
+       <div class="row-fluid">
+          <button type="button" id="add_modal_save" class="btn btn-primary">Save</button>
+          <button type="button" id="add_modal_close"class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

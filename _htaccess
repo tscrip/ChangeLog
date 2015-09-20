@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteBase /ChangeLog/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ /ChangeLog/index.php [QSA,L]
